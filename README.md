@@ -1,4 +1,4 @@
-👋 Hi, I’m @julianschelb
+👋 Hi, I’m Julian Schelb, a Research Assistant at the University of Konstanz with an interest in using Python for data analysis. My focus is on Natural Language Processing and LLMs.
 
 <!---
 julianschelb/julianschelb is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
