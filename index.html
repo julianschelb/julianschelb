@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian | GitHub Profile</title>
+    <style>
+      /* Color Scheme */
+      :root {
+          --background-color: #eaf6ff; /* Light Blue */
+          --text-color: #3e3d3d;
+          --header-color: #3a5a8b; /* Dark Blue */
+          --card-background: #ffffff;
+          --title-color: #3a5a8b; /* Lighter Blue for titles */
+          --link-color: #1e90ff; /* Dodger Blue */
+          --button-background: #d0e8ff; /* Soft Blue */
+          --button-text: #0a4d8c; /* Dark Text for Buttons */
+          --button-hover-background: #c0dbff; /* Hover Button Background */
+          --shadow-color: rgba(0, 0, 0, 0.1);
+      }
+      body {
+          font-family: Arial, sans-serif;
+          max-width: 900px;
+          margin: auto;
+          padding: 20px;
+          background-color: var(--background-color);
+          color: var(--text-color);
+      }
+      h1, h2, h3 {
+          color: var(--header-color);
+      }
+      .profile {
+          text-align: center;
+      }
+      ul {
+          list-style-type: none;
+          padding: 0;
+      }
+      a {
+          color: var(--link-color);
+          text-decoration: none;
+      }
+      a:hover {
+          color: var(--link-color);
+          text-decoration: underline;
+      }
+      /* Project Cards */
+      .project-cards {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          margin-top: 20px;
+      }
+      .card {
+          background-color: var(--card-background);
+          flex: 1 1 250px; /* Responsive width, min 250px */
+          max-width: 300px; /* Maximum width */
+          padding: 15px;
+          border-radius: 8px;
+          box-shadow: 0px 4px 8px var(--shadow-color);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+      }
+      .card:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 6px 12px var(--shadow-color);
+      }
+      .card-title {
+          font-size: 1.2em;
+          font-weight: bold;
+          color: var(--title-color);
+          margin-bottom: 10px;
+      }
+      .button-container {
+          margin-top: auto; /* Pushes the button container to the bottom */
+          width: 100%; /* Ensure buttons span the card width */
+      }
+      .visit-link {
+          display: inline-block;
+          margin-top: 5px;
+          padding: 8px 12px;
+          background-color: var(--button-background);
+          color: var(--button-text);
+          border-radius: 5px;
+          text-align: center;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+          width: 100%; /* Ensures button fills container width */
+          box-sizing: border-box;
+      }
+      .visit-link:hover {
+          background-color: var(--button-hover-background);
+      }
+  </style>
+  
+  <body>
+      <div class="profile">
+          <h1>Hey there! I'm Julian 👋</h1>
+          <p>NLP Researcher and Data Scientist</p>
+      </div>
+  
+      <section class="about-card">
+          <h2>About Me</h2>
+          <p>
+              I’m a PhD candidate in Computer and Information Science at the University of Konstanz, researching NLP, large language models, and all things Data Science!
+          </p>
+          <h3>Interests</h3>
+          <p>💡 Implicit Entity Networks, Psychometric Testing, Narrative Tracking, RAG, and Historical Document Processing</p>
+      </section>
+  
+      <section class="projects">
+          <h2>Projects</h2>
+          <div class="project-cards">
+              <div class="card">
+                  <div class="card-title">Topic Classification of German Web Data</div>
+                  <p>We explore the application of large language models for topic classification within a low-resource German web environment, leveraging a dataset comprising millions of scraped webpages aimed at evaluating policy impacts.</p>
+                  <div class="button-container">
+                      <a href="https://github.com/julianschelb/Topic-Classification" target="_blank" class="visit-link">Visit Project</a>
+                      <a href="https://aclanthology.org/2024.acl-srw.22.pdf" target="_blank" class="visit-link">Read Paper</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-title">Narrative Tracking in Newspapers</div>
+                  <p>We explore these narratives and their patterns of influence by compiling a large dataset of news articles. Using large language models to annotate narratives as triples of hero, villain, and victim mentions, we track shared narratives and identify patterns of influence across partisanships.</p>
+                  <div class="button-container">
+                      <a href="https://github.com/julianschelb/llm-based-role-labeling" target="_blank" class="visit-link">Visit Project</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-title">ECCE - Entity-Centric Corpus Exploration</div>
+                  <p>ECCE helps you to analyze your documents and corpora by detecting named entities to extracting an entity network.</p>
+                  <div class="button-container">
+                      <a href="https://dimtools.uni-konstanz.de/ecce/" target="_blank" class="visit-link">Visit Project</a>
+                      <a href="https://doi.org/10.1145/3487553.3524237" target="_blank" class="visit-link">Read Paper</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-title">RAG-based Knowledge Extraction</div>
+                  <p>RAG pipeline for querying technical docs, with query expansion, HyDE, and a Gradio chat interface.</p>
+                  <div class="button-container">
+                      <a href="https://github.com/julianschelb/RAG-based-Knowledge-Extraction-Challenge" target="_blank" class="visit-link">Visit Project</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-title">Finetune RoBERTa for NER</div>
+                  <p>Fine-tuned RoBERTa for multilingual NER to make cross-lingual entity extraction easier.</p>
+                  <div class="button-container">
+                      <a href="https://github.com/julianschelb/roberta-ner-multilingual" target="_blank" class="visit-link">Visit Project</a>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="card-title">Yet Another Solarized Theme</div>
+                  <p>A solarized VSCode theme with just the right contrast to keep your eyes comfy!</p>
+                  <div class="button-container">
+                      <a href="https://github.com/julianschelb/vscode-theme-solarized" target="_blank" class="visit-link">Visit Project</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+      <footer>
+          <p>🌟 For more projects and collaborations, check out my <a href="https://github.com/julianschelb" target="_blank">GitHub</a> or let’s connect on <a href="https://www.linkedin.com/in/julian-schelb/" target="_blank">LinkedIn</a>!</p>
+      </footer>
+  </body>
+</html>
