@@ -94,21 +94,29 @@
       .visit-link:hover {
           background-color: var(--button-hover-background);
       }
-    .pills-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 10px 0;
-    }
-    
-    .pill {
-        background-color: var(--button-background);
-        color: var(--button-text);
-        padding: 5px 12px;
-        border-radius: 20px;
-        font-size: 0.9em;
-        white-space: nowrap;
-    }
+        
+      /* Pill-shaped tags */
+      .pills-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin: 10px 0;
+      }
+
+      .pill {
+          background-color: var(--button-background);
+          color: var(--button-text);
+          padding: 5px 12px;
+          border-radius: 20px;
+          font-size: 0.9em;
+          white-space: nowrap;
+          box-sizing: border-box;
+          transition: background-color 0.2s ease;
+      }
+
+      .pill:hover {
+          background-color: var(--button-hover-background);
+      }
   </style>
   
   <body>
