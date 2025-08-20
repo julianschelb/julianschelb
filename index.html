@@ -7,15 +7,15 @@
     <style>
       /* Color Scheme */
       :root {
-          --background-color: #fafafae7; /* Light Blue */
+          --background-color: #fafafae7;
           --text-color: #3e3d3d;
-          --header-color: #3a5a8b; /* Dark Blue */
+          --header-color: #3a5a8b;
           --card-background: #ffffff;
-          --title-color: #3a5a8b; /* Lighter Blue for titles */
-          --link-color: #1e90ff; /* Dodger Blue */
-          --button-background: #d0e8ff; /* Soft Blue */
-          --button-text: #0a4d8c; /* Dark Text for Buttons */
-          --button-hover-background: #c0dbff; /* Hover Button Background */
+          --title-color: #3a5a8b;
+          --link-color: #1e90ff;
+          --button-background: #d0e8ff;
+          --button-text: #0a4d8c;
+          --button-hover-background: #c0dbff;
           --shadow-color: rgba(0, 0, 0, 0.1);
       }
       body {
@@ -45,9 +45,9 @@
           text-decoration: underline;
       }
       .about-card p {
-          font-size: 1.2em; /* Increase font size for the "About Me" paragraph */
+          font-size: 1.2em;
       }
-        
+
       /* Project Cards */
       .project-cards {
           display: flex;
@@ -58,8 +58,8 @@
       }
       .card {
           background-color: var(--card-background);
-          flex: 1 1 250px; /* Responsive width, min 250px */
-          max-width: 300px; /* Maximum width */
+          flex: 1 1 250px;
+          max-width: 300px;
           padding: 15px;
           border-radius: 8px;
           box-shadow: 0px 4px 8px var(--shadow-color);
@@ -72,6 +72,13 @@
           transform: scale(1.05);
           box-shadow: 0px 6px 12px var(--shadow-color);
       }
+      /* Full width on narrow screens */
+      @media (max-width: 625px) {
+          .card {
+              flex: 0 0 90%;
+              max-width: 90%;
+          }
+      }
       .card-title {
           font-size: 1.2em;
           font-weight: bold;
@@ -79,8 +86,8 @@
           margin-bottom: 10px;
       }
       .button-container {
-          margin-top: auto; /* Pushes the button container to the bottom */
-          width: 100%; /* Ensure buttons span the card width */
+          margin-top: auto;
+          width: 100%;
       }
       .visit-link {
           display: inline-block;
@@ -92,13 +99,13 @@
           text-align: center;
           text-decoration: none;
           transition: background-color 0.3s ease;
-          width: 100%; /* Ensures button fills container width */
+          width: 100%;
           box-sizing: border-box;
       }
       .visit-link:hover {
           background-color: var(--button-hover-background);
       }
-        
+
       /* Pill-shaped tags */
       .pills-container {
           display: flex;
@@ -106,7 +113,6 @@
           gap: 8px;
           margin: 10px 0;
       }
-
       .pill {
           background-color: var(--button-background);
           color: var(--button-text);
@@ -117,23 +123,23 @@
           box-sizing: border-box;
           transition: background-color 0.2s ease;
       }
-
       .pill:hover {
           background-color: var(--button-hover-background);
       }
   </style>
-  
-  <body>
-      <div class="profile">
-          <h1>Hey there! I'm Julian 👋</h1>
-          <p>NLP Researcher and Data Scientist</p>
-      </div>
-  
-      <section class="about-card">
-          <h2>About Me</h2>
-          <p>
-              I'm an NLP Researcher at the University of Konstanz and a Software Engineer, specializing in large language models and all things data science!
-          </p>
+</head>
+<body>
+    <!-- Rest of your HTML remains the same -->
+    <div class="profile">
+        <h1>Hey there! I'm Julian 👋</h1>
+        <p>NLP Researcher and Data Scientist</p>
+    </div>
+
+    <section class="about-card">
+        <h2>About Me</h2>
+        <p>
+            I'm an NLP Researcher at the University of Konstanz and a Software Engineer, specializing in large language models and all things data science!
+        </p>
         <div class="pills-container">
             <span class="pill">M.Sc. Computer Science</span>
             <span class="pill">B.Sc. Business Informatics</span>
@@ -144,13 +150,12 @@
             <span class="pill">Junior Data Scientist</span>
             <span class="pill">Application Developer</span>
         </div>
-      </section>
-  
-      <section class="projects">
-          <h2>Projects</h2>
-          <div class="project-cards">
+    </section>
 
-              <div class="card">
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="card">
                 <div class="card-title">Loci-Similes: Intertextuality in Latin Literature</div>
                 <p>A Python package for detecting intertextual links in Latin literature using pre-trained language models. The pipeline generates and reranks candidates to map sentences between source and query documents, with a focus on evaluating semantic and stylistic reuse.</p>
                 <div class="button-container">
@@ -158,13 +163,13 @@
                     <a href="https://pypi.org/project/locisimiles/" target="_blank" class="visit-link">PyPI Package</a>
                 </div>
             </div>
-              <div class="card">
-                  <div class="card-title">Topic Classification of German Web Data</div>
-                  <p>We explore the application of large language models for topic classification within a low-resource German web environment, leveraging a dataset comprising millions of scraped webpages aimed at evaluating policy impacts.</p>
-                  <div class="button-container">
-                      <a href="https://github.com/julianschelb/Topic-Classification" target="_blank" class="visit-link">Visit Project</a>
-                      <a href="https://aclanthology.org/2024.acl-srw.22.pdf" target="_blank" class="visit-link">Read Paper</a>
-                  </div>
+            <div class="card">
+                <div class="card-title">Topic Classification of German Web Data</div>
+                <p>We explore the application of large language models for topic classification within a low-resource German web environment, leveraging a dataset comprising millions of scraped webpages aimed at evaluating policy impacts.</p>
+                <div class="button-container">
+                    <a href="https://github.com/julianschelb/Topic-Classification" target="_blank" class="visit-link">Visit Project</a>
+                    <a href="https://aclanthology.org/2024.acl-srw.22.pdf" target="_blank" class="visit-link">Read Paper</a>
+                </div>
             </div>
             <div class="card">
                 <div class="card-title">Tag-Pag: Systematic Web Page Annotations</div>
@@ -182,47 +187,47 @@
                     <a href="https://arxiv.org/abs/2503.10229" target="_blank" class="visit-link">Read Paper</a>
                 </div>
             </div>
-              <div class="card">
-                  <div class="card-title">Narrative Tracking in Newspapers</div>
-                  <p>We explore narratives and their patterns of influence by compiling a large dataset of news articles. Using large language models to annotate narratives as triples of hero, villain, and victim mentions, we track shared narratives and identify patterns of influence across partisanships.</p>
-                  <div class="button-container">
-                      <a href="https://github.com/julianschelb/llm-based-role-labeling" target="_blank" class="visit-link">Visit Project</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="card-title">ECCE - Entity-Centric Corpus Exploration</div>
-                  <p>ECCE helps you to analyze your documents and corpora by detecting named entities to extracting an entity network.</p>
-                  <div class="button-container">
-                      <a href="https://dimtools.uni-konstanz.de/ecce/" target="_blank" class="visit-link">Visit Project</a>
-                      <a href="https://doi.org/10.1145/3487553.3524237" target="_blank" class="visit-link">Read Paper</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="card-title">RAG-based Knowledge Extraction</div>
-                  <p>RAG pipeline for querying technical docs, with query expansion, HyDE, and a Gradio chat interface.</p>
-                  <div class="button-container">
-                      <a href="https://github.com/julianschelb/RAG-based-Knowledge-Extraction-Challenge" target="_blank" class="visit-link">Visit Project</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="card-title">Finetune RoBERTa for NER</div>
-                  <p>Fine-tuned RoBERTa for multilingual NER to make cross-lingual entity extraction easier.</p>
-                  <div class="button-container">
-                      <a href="https://github.com/julianschelb/roberta-ner-multilingual" target="_blank" class="visit-link">Visit Project</a>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="card-title">Yet Another Solarized Theme</div>
-                  <p>A solarized VSCode theme with just the right contrast to keep your eyes comfy!</p>
-                  <div class="button-container">
-                      <a href="https://github.com/julianschelb/vscode-theme-solarized" target="_blank" class="visit-link">Visit Project</a>
-                  </div>
-              </div>
-          </div>
-      </section>
-  
-      <footer>
-          <p>🌟 For more projects and collaborations, check out my <a href="https://github.com/julianschelb" target="_blank">GitHub</a> or let’s connect on <a href="https://www.linkedin.com/in/julian-schelb/" target="_blank">LinkedIn</a>!</p>
-      </footer>
-  </body>
+            <div class="card">
+                <div class="card-title">Narrative Tracking in Newspapers</div>
+                <p>We explore narratives and their patterns of influence by compiling a large dataset of news articles. Using large language models to annotate narratives as triples of hero, villain, and victim mentions, we track shared narratives and identify patterns of influence across partisanships.</p>
+                <div class="button-container">
+                    <a href="https://github.com/julianschelb/llm-based-role-labeling" target="_blank" class="visit-link">Visit Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">ECCE - Entity-Centric Corpus Exploration</div>
+                <p>ECCE helps you to analyze your documents and corpora by detecting named entities to extracting an entity network.</p>
+                <div class="button-container">
+                    <a href="https://dimtools.uni-konstanz.de/ecce/" target="_blank" class="visit-link">Visit Project</a>
+                    <a href="https://doi.org/10.1145/3487553.3524237" target="_blank" class="visit-link">Read Paper</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">RAG-based Knowledge Extraction</div>
+                <p>RAG pipeline for querying technical docs, with query expansion, HyDE, and a Gradio chat interface.</p>
+                <div class="button-container">
+                    <a href="https://github.com/julianschelb/RAG-based-Knowledge-Extraction-Challenge" target="_blank" class="visit-link">Visit Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">Finetune RoBERTa for NER</div>
+                <p>Fine-tuned RoBERTa for multilingual NER to make cross-lingual entity extraction easier.</p>
+                <div class="button-container">
+                    <a href="https://github.com/julianschelb/roberta-ner-multilingual" target="_blank" class="visit-link">Visit Project</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">Yet Another Solarized Theme</div>
+                <p>A solarized VSCode theme with just the right contrast to keep your eyes comfy!</p>
+                <div class="button-container">
+                    <a href="https://github.com/julianschelb/vscode-theme-solarized" target="_blank" class="visit-link">Visit Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>🌟 For more projects and collaborations, check out my <a href="https://github.com/julianschelb" target="_blank">GitHub</a> or let’s connect on <a href="https://www.linkedin.com/in/julian-schelb/" target="_blank">LinkedIn</a>!</p>
+    </footer>
+</body>
 </html>
