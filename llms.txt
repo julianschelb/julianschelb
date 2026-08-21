@@ -1,0 +1,26 @@
+# Julian Schelb
+
+> NLP researcher at the University of Konstanz, with a background in software engineering and data science consulting. Research on detecting intertextuality in Latin literature, evaluating large language models, and using web data for the social sciences.
+
+## Profile
+
+- Website: https://julian-schelb.com/
+- GitHub: https://github.com/julianschelb
+- ORCID: https://orcid.org/0009-0002-8034-7364
+- Hugging Face: https://huggingface.co/julian-schelb
+- LinkedIn: https://www.linkedin.com/in/julian-schelb/
+
+## Key publications
+
+- Loci Similes: A Benchmark for Extracting Intertextualities in Latin Literature (Findings of EMNLP): https://arxiv.org/abs/2601.07533
+- R.U.Psycho? Robust Unified Psychometric Testing of Language Models (LREC): https://aclanthology.org/2026.lrec-1.661/
+- Assessing In-context Learning and Fine-tuning for Topic Classification of German Web Data (ACL SRW): https://aclanthology.org/2024.acl-srw.22
+- ECCE: Entity-centric Corpus Exploration Using Contextual Implicit Networks (WWW Companion): https://doi.org/10.1145/3487553.3524237
+- Tag-Pag: A Dedicated Tool for Systematic Web Page Annotations (preprint): https://arxiv.org/abs/2502.16150
+- An Evaluation of Classifiers for Mapping Generative LLM Responses to Answer Options (EACL SRW): https://aclanthology.org/2026.eacl-srw.64/
+
+## Software
+
+- locisimiles (Python package for Latin intertextuality detection): https://github.com/julianschelb/locisimiles and https://pypi.org/project/locisimiles/
+- rupsycho (psychometric testing of language models): https://github.com/julianschelb/rupsycho
+- ECCE live demo: https://dimtools.uni-konstanz.de/ecce/

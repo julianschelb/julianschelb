@@ -1,376 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>About me - Julian Schelb</title>
-    <meta name="description" content="Julian Schelb is an NLP Researcher at University of Konstanz and Software Engineer specializing in large language models, data science, and AI. Explore his research projects and publications.">
-    <meta name="keywords" content="Julian Schelb, NLP researcher, data scientist, machine learning, artificial intelligence, large language models, University of Konstanz, Python, research, publications">
-    <meta name="author" content="Julian Schelb">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://julianschelb.github.io/julianschelb/">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julian Schelb — NLP Researcher</title>
+<meta name="description" content="Julian Schelb is an NLP researcher at the University of Konstanz, software engineer, and data science and AI consultant. Research on intertextuality in Latin literature, evaluation of large language models, and web data for the social sciences.">
+<meta name="author" content="Julian Schelb">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://julian-schelb.com/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Julian Schelb — NLP Researcher">
+<meta property="og:description" content="NLP researcher at the University of Konstanz working on intertextuality in Latin literature, LLM evaluation, and web data for the social sciences.">
+<meta property="og:url" content="https://julian-schelb.com/">
+<meta property="og:image" content="https://julian-schelb.com/images/me_compressed.jpg">
+<meta property="og:site_name" content="Julian Schelb">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Julian Schelb — NLP Researcher">
+<meta name="twitter:description" content="NLP researcher at the University of Konstanz working on intertextuality in Latin literature, LLM evaluation, and web data for the social sciences.">
+<meta name="theme-color" content="#fcfbf7">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": "https://julian-schelb.com/#page",
+      "url": "https://julian-schelb.com/",
+      "name": "Julian Schelb — NLP Researcher",
+      "mainEntity": { "@id": "https://julian-schelb.com/#person" }
+    },
+    {
       "@type": "Person",
+      "@id": "https://julian-schelb.com/#person",
       "name": "Julian Schelb",
-      "jobTitle": "NLP Researcher and Data Scientist",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "University of Konstanz"
-      },
-      "url": "https://julianschelb.github.io/julianschelb/",
-      "image": "https://julianschelb.github.io/julianschelb/images/me_compressed.jpg",
+      "jobTitle": "NLP Researcher",
+      "worksFor": { "@type": "CollegeOrUniversity", "name": "University of Konstanz" },
+      "url": "https://julian-schelb.com/",
+      "image": "https://julian-schelb.com/images/me_compressed.jpg",
       "sameAs": [
         "https://github.com/julianschelb",
         "https://huggingface.co/julian-schelb",
-        "https://www.linkedin.com/in/julian-schelb/"
+        "https://www.linkedin.com/in/julian-schelb/",
+        "https://orcid.org/0009-0002-8034-7364"
       ],
       "knowsAbout": [
-        "Natural Language Processing",
-        "Machine Learning",
-        "Data Science",
-        "Large Language Models",
-        "Artificial Intelligence",
-        "Python Programming"
-      ],
-      "alumniOf": [
-        {
-          "@type": "Organization",
-          "name": "University",
-          "description": "M.Sc. Computer Science, B.Sc. Business Informatics"
-        }
+        "Natural Language Processing", "Large Language Models", "Information Retrieval",
+        "Digital Humanities", "Intertextuality Detection", "Machine Learning", "Data Science"
       ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Loci Similes: A Benchmark for Extracting Intertextualities in Latin Literature",
+      "author": { "@id": "https://julian-schelb.com/#person" },
+      "isPartOf": "Findings of the Association for Computational Linguistics: EMNLP",
+      "url": "https://arxiv.org/abs/2601.07533"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "R.U.Psycho? A Framework for Robust Unified Psychometric Testing of Language Models",
+      "author": { "@id": "https://julian-schelb.com/#person" },
+      "isPartOf": "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+      "url": "https://aclanthology.org/2026.lrec-1.661/"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Assessing In-context Learning and Fine-tuning for Topic Classification of German Web Data",
+      "author": { "@id": "https://julian-schelb.com/#person" },
+      "isPartOf": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Student Research Workshop)",
+      "url": "https://aclanthology.org/2024.acl-srw.22"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "ECCE: Entity-centric Corpus Exploration Using Contextual Implicit Networks",
+      "author": { "@id": "https://julian-schelb.com/#person" },
+      "isPartOf": "Companion Proceedings of the Web Conference 2022",
+      "url": "https://doi.org/10.1145/3487553.3524237"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Tag-Pag: A Dedicated Tool for Systematic Web Page Annotations",
+      "author": { "@id": "https://julian-schelb.com/#person" },
+      "url": "https://arxiv.org/abs/2502.16150"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "An Evaluation of Classifiers for Mapping Generative LLM Responses to Answer Options of Multiple-choice Questionnaires",
+      "author": { "@id": "https://julian-schelb.com/#person" },
+      "isPartOf": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Student Research Workshop)",
+      "url": "https://aclanthology.org/2026.eacl-srw.64/"
     }
-    </script>
-    <style>
-      /* Color Scheme */
-      :root {
-          --background-color: #fafafae7;
-          --text-color: #3e3d3d;
-          --header-color: #3a5a8b;
-          --card-background: #ffffff;
-          --title-color: #3a5a8b;
-          --link-color: #1e90ff;
-          --button-background: #d0e8ff;
-          --button-text: #0a4d8c;
-          --button-hover-background: #c0dbff;
-          --shadow-color: rgba(0, 0, 0, 0.1);
-      }
-      body {
-          font-family: Arial, sans-serif;
-          max-width: 900px;
-          margin: auto;
-          padding: 20px;
-          background-color: var(--background-color);
-          color: var(--text-color);
-      }
-      h1, h2, h3 {
-          color: var(--header-color);
-      }
-      .profile {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 20px;
-          flex-wrap: wrap;
-          max-width: 600px;
-          margin: 0 auto;
-      }
-      .profile-text {
-          text-align: right;
-      }
-      .profile-image {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-          object-fit: cover;
-          box-shadow: 0px 4px 12px var(--shadow-color);
-          transition: transform 0.3s ease;
-      }
-      .profile-image:hover {
-          transform: scale(1.05);
-      }
-      @media (max-width: 600px) {
-          .profile {
-              flex-direction: column;
-          }
-      }
-      ul {
-          list-style-type: none;
-          padding: 0;
-      }
-      a {
-          color: var(--link-color);
-          text-decoration: none;
-      }
-      a:hover {
-          color: var(--link-color);
-          text-decoration: underline;
-      }
-      .about-card p {
-          font-size: 1.2em;
-      }
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #fcfbf7;
+    --surface: #ffffff;
+    --ink: #292433;
+    --ink-2: #4c4457;
+    --muted: #837c8e;
+    --line: #e9e5dc;
+    --line-soft: #f2efe8;
+    --accent: #5b4cb0;
+    --accent-soft: #ece8f8;
+    --pop: #c05f21;
+    --pop-soft: #fdeeda;
+    --shadow: 0 2px 4px rgba(41,36,51,.05), 0 12px 28px rgba(41,36,51,.08);
+    --shadow-lg: 0 6px 14px rgba(41,36,51,.08), 0 24px 55px rgba(41,36,51,.13);
+    --hover-bg: rgba(41,36,51,.045);
+  }
+  [data-theme="dark"] {
+    --bg: #332f45;
+    --surface: #413c56;
+    --ink: #eceaf2;
+    --ink-2: #cfccdb;
+    --muted: #9a96a8;
+    --line: #524d68;
+    --line-soft: #3c3750;
+    --accent: #b3a7f5;
+    --accent-soft: #4b4470;
+    --pop: #f0a563;
+    --pop-soft: #4d3a24;
+    --shadow: 0 2px 4px rgba(0,0,0,.25), 0 12px 30px rgba(0,0,0,.28);
+    --shadow-lg: 0 6px 14px rgba(0,0,0,.3), 0 26px 60px rgba(0,0,0,.38);
+    --hover-bg: rgba(255,255,255,.06);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: Nunito, ui-rounded, "SF Pro Rounded", ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 17px; line-height: 1.62; font-weight: 500;
+    transition: background-color .3s ease, color .3s ease;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 900px; margin: 0 auto; padding: 0 24px 90px; }
+  a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  a[target="_blank"]::after {
+    content: ""; display: inline-block; width: .68em; height: .68em; margin-left: 4px;
+    background-color: currentColor; opacity: .55; vertical-align: -.02em;
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/></svg>") no-repeat center / contain;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/></svg>") no-repeat center / contain;
+  }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
 
-      /* Project Cards */
-      .project-cards {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
-          justify-content: center;
-          margin-top: 20px;
-      }
-      .card {
-          background-color: var(--card-background);
-          flex: 1 1 250px;
-          max-width: 300px;
-          padding: 15px;
-          border-radius: 8px;
-          box-shadow: 0px 4px 8px var(--shadow-color);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-      }
-      .card:hover {
-          transform: scale(1.05);
-          box-shadow: 0px 6px 12px var(--shadow-color);
-      }
-      /* Full width on narrow screens */
-      @media (max-width: 625px) {
-          .card {
-              flex: 0 0 90%;
-              max-width: 90%;
-          }
-      }
-      .card-title {
-          font-size: 1.2em;
-          font-weight: bold;
-          color: var(--title-color);
-          margin-bottom: 10px;
-      }
-      .button-container {
-          margin-top: auto;
-          width: 100%;
-      }
-      .visit-link {
-          display: inline-block;
-          margin-top: 5px;
-          padding: 8px 12px;
-          background-color: var(--button-background);
-          color: var(--button-text);
-          border-radius: 5px;
-          text-align: center;
-          text-decoration: none;
-          transition: background-color 0.3s ease;
-          width: 100%;
-          box-sizing: border-box;
-      }
-      .visit-link:hover {
-          background-color: var(--button-hover-background);
-      }
+  .topbar { display: flex; justify-content: flex-end; padding: 20px 0 0; }
+  .theme-toggle {
+    background: var(--surface); border: 1px solid var(--line); color: var(--muted);
+    width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: color .2s, border-color .2s, transform .25s cubic-bezier(.2,.9,.3,1.3), box-shadow .2s;
+  }
+  .theme-toggle:hover { color: var(--accent); border-color: var(--accent); transform: rotate(25deg) scale(1.06); box-shadow: var(--shadow); }
+  .theme-toggle svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+  [data-theme="dark"] .moon { display: none; }
+  :root:not([data-theme="dark"]) .sun { display: none; }
 
-      /* Pill-shaped tags */
-      .pills-container {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-          margin: 10px 0;
-      }
-      .pill {
-          background-color: var(--button-background);
-          color: var(--button-text);
-          padding: 5px 12px;
-          border-radius: 20px;
-          font-size: 0.9em;
-          white-space: nowrap;
-          box-sizing: border-box;
-          transition: background-color 0.2s ease;
-      }
-      .pill:hover {
-          background-color: var(--button-hover-background);
-      }
+  header.masthead { display: flex; align-items: center; gap: 30px; padding: 46px 0 26px; }
+  .portrait {
+    width: 116px; height: 116px; border-radius: 50%; object-fit: cover; flex: none;
+    background: var(--line-soft); box-shadow: var(--shadow-lg);
+    border: 4px solid var(--surface);
+    transition: transform .35s cubic-bezier(.2,.9,.3,1.3);
+  }
+  .portrait:hover { transform: scale(1.05) rotate(-2.5deg); }
+  .greeting { font-size: 1.12rem; font-weight: 700; color: var(--pop); margin: 0 0 2px; }
+  h1 { font-size: 2.45rem; font-weight: 800; line-height: 1.1; letter-spacing: -.02em; margin: 0 0 16px; }
+  .wave { display: inline-block; transform-origin: 70% 80%; }
+  @media (prefers-reduced-motion: no-preference) {
+    .wave { animation: wave 1.8s ease-in-out 1s; }
+    .masthead:hover .wave { animation: wave 1.6s ease-in-out; }
+    @keyframes wave { 0%,60%,100% {transform:rotate(0)} 15%,45% {transform:rotate(17deg)} 30% {transform:rotate(-11deg)} }
+  }
+  .iconrow { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .iconrow a {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 7px 15px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--surface); color: var(--ink-2);
+    font-size: .82rem; font-weight: 700;
+    transition: color .2s, border-color .2s, transform .2s, box-shadow .2s;
+  }
+  .iconrow a::after { content: none; }
+  .iconrow a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); }
+  .iconrow svg { width: 15px; height: 15px; fill: currentColor; }
 
-      /* Social Media Buttons */
-      .social-buttons {
-          display: flex;
-          gap: 15px;
-          justify-content: center;
-          margin: 20px 0;
-          flex-wrap: wrap;
-          width: 100%;
-      }
-      .social-button {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 10px 20px;
-          background-color: #f8f9fa;
-          color: #6c757d;
-          border: 2px solid #dee2e6;
-          border-radius: 8px;
-          text-decoration: none;
-          font-weight: 500;
-          transition: all 0.3s ease;
-          box-shadow: 0px 2px 4px var(--shadow-color);
-      }
-      .social-button:hover {
-          background-color: #e9ecef;
-          border-color: #adb5bd;
-          transform: translateY(-2px);
-          box-shadow: 0px 4px 8px var(--shadow-color);
-          color: #495057;
-      }
-      .social-icon {
-          width: 20px;
-          height: 20px;
-      }
-      .huggingface-button {
-          margin-left: 0;
-      }
-      @media (max-width: 600px) {
-          .social-buttons {
-              justify-content: center;
-          }
-      }
-  </style>
+  .lede { font-size: 1.16rem; line-height: 1.62; color: var(--ink-2); margin: 0; }
+
+
+  section { padding-top: 58px; }
+  #projects { padding-top: 26px; }
+  h2.seclbl { margin-top: 0; }
+  .seclbl { font-size: 1.5rem; font-weight: 800; letter-spacing: -.01em; color: var(--accent); margin: 0 0 20px; }
+
+
+  /* ---- hover cards in the intro ---- */
+  .pop { position: relative; text-decoration: underline dotted var(--accent) 2px; text-underline-offset: 4px; cursor: help; }
+  .popcard {
+    position: absolute; left: 50%; top: calc(100% + 12px); transform: translateX(-50%) translateY(6px);
+    width: 320px; max-width: 82vw; z-index: 10;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 16px; box-shadow: var(--shadow-lg);
+    font-size: .85rem; line-height: 1.55; color: var(--ink-2); font-weight: 500;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity .22s ease, transform .22s ease, visibility .22s;
+  }
+  .popcard::before {
+    content: ""; position: absolute; left: 50%; top: -6px; transform: translateX(-50%) rotate(45deg);
+    width: 11px; height: 11px; background: var(--surface);
+    border-left: 1px solid var(--line); border-top: 1px solid var(--line);
+  }
+  .popcard strong {
+    display: block; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--accent); font-weight: 800; margin-bottom: 6px;
+  }
+  .pop:hover .popcard, .pop:focus .popcard, .pop:focus-within .popcard {
+    opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); pointer-events: auto;
+  }
+  .lede .pop:last-of-type .popcard { left: auto; right: 0; transform: translateY(6px); }
+  .lede .pop:last-of-type .popcard::before { left: auto; right: 36px; }
+  .lede .pop:last-of-type:hover .popcard, .lede .pop:last-of-type:focus .popcard, .lede .pop:last-of-type:focus-within .popcard { transform: translateY(0); }
+  @media (max-width: 620px) {
+    .popcard { left: 0; transform: none; }
+    .popcard::before { left: 40px; }
+    .pop:hover .popcard, .pop:focus .popcard { transform: none; }
+  }
+
+  /* ---- projects as a horizontal carousel ---- */
+  .sec-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .car-nav { display: flex; gap: 8px; }
+  .car-btn {
+    width: 38px; height: 38px; border-radius: 50%; cursor: pointer;
+    background: var(--surface); border: 1px solid var(--line); color: var(--ink-2);
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: color .2s, border-color .2s, transform .2s, box-shadow .2s;
+  }
+  .car-btn:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); }
+  .car-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .cards {
+    display: flex; gap: 13px;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
+    padding: 24px 30px 48px; margin: -14px -30px -22px;
+    scroll-padding-left: 30px;
+    scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  }
+  .cards::-webkit-scrollbar { height: 6px; }
+  .cards::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .cards::-webkit-scrollbar-track { background: transparent; }
+  .cards .item { flex: 0 0 295px; scroll-snap-align: start; }
+  .cards .item {
+    background: var(--surface); border-radius: 16px; border: 1px solid var(--line);
+    padding: 17px 18px; margin: 0;
+    display: flex; flex-direction: column;
+    transition: transform .25s cubic-bezier(.2,.9,.3,1.25), box-shadow .25s ease, border-color .25s;
+    box-shadow: var(--shadow);
+  }
+  .cards .item:hover { transform: translateY(-4px) rotate(-.3deg); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+  .cards .kick {
+    align-self: flex-start;
+    font-size: .62rem; letter-spacing: .09em; text-transform: uppercase; font-weight: 800;
+    font-style: normal; color: var(--accent); background: var(--accent-soft);
+    padding: 3px 10px; border-radius: 999px; margin: 0 0 9px;
+  }
+  .cards .item:nth-child(even) .kick { color: var(--pop); background: var(--pop-soft); }
+  .cards .it-title { font-size: 1.06rem; font-weight: 800; margin: 0 0 6px; line-height: 1.3; letter-spacing: -.01em; }
+  .cards .it-desc { margin: 0 0 12px; font-size: .87rem; line-height: 1.55; color: var(--ink-2); }
+  .cards .it-links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 12px; font-size: .83rem; align-items: baseline; }
+  .cards .it-links a:hover { color: var(--pop); }
+
+  /* ---- publications, archivist style ---- */
+  #publications .item {
+    padding: 14px 14px; margin: 0 -14px; border-top: 1px solid var(--line-soft);
+    border-radius: 12px;
+    transition: background-color .2s ease;
+  }
+  #publications .item:hover { background: var(--hover-bg); }
+  #publications .item:first-of-type { border-top: none; }
+  #publications .it-title { font-size: 1rem; font-weight: 800; margin: 0 0 2px; line-height: 1.35; letter-spacing: -.005em; }
+  .pub-venue { font-size: .85rem; font-style: italic; color: var(--muted); margin: 0 0 2px; display: inline; }
+  .pub-venue::after { content: " · "; font-style: normal; }
+  .authors { font-size: .85rem; color: var(--muted); margin: 0 0 5px; font-weight: 600; display: inline; }
+  .authors .me { color: inherit; font-weight: inherit; }
+  .summary { margin: 4px 0 7px; font-size: .88rem; line-height: 1.55; color: var(--ink-2); }
+  #publications .it-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: .85rem; align-items: baseline; }
+  .lnk-lbl { color: var(--muted); font-weight: 700; font-size: .78rem; }
+  #publications .it-links a:hover { color: var(--pop); }
+
+  footer.site {
+    margin-top: 68px; padding-top: 22px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .88rem; font-weight: 600;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .55s ease, transform .55s cubic-bezier(.2,.9,.3,1.1); }
+    .reveal.in { opacity: 1; transform: none; }
+  }
+  @media (max-width: 620px) {
+    header.masthead { flex-direction: column; align-items: flex-start; gap: 18px; padding-top: 30px; }
+    h1 { font-size: 2rem; }
+  }
+</style>
 </head>
 <body>
-    <header>
-        <div class="profile">
-            <div class="profile-text">
-                <h1>Hey there! </h1>
-                <h2>I'm Julian 👋 </h2>
-            </div>
-            <img src="images/me_compressed.jpg" alt="Julian Schelb - NLP Researcher and Data Scientist profile picture" class="profile-image">
-        </div>
+<div class="page">
 
-        <nav class="social-buttons" aria-label="Social media links">
-            <a href="https://github.com/julianschelb" target="_blank" rel="noopener noreferrer" class="social-button" aria-label="Visit Julian's GitHub profile">
-                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/julian-schelb/" target="_blank" rel="noopener noreferrer" class="social-button" aria-label="Visit Julian's LinkedIn profile">
-                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-                LinkedIn
-            </a>
-            <a href="https://huggingface.co/julian-schelb" target="_blank" rel="noopener noreferrer" class="social-button huggingface-button" aria-label="Visit Julian's HuggingFace profile">
-                🤗 HuggingFace
-            </a>
-        </nav>
-    </header>
+  <div class="topbar">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+
+  <header class="masthead">
+    <img class="portrait" src="images/me_compressed.jpg" alt="Julian Schelb">
+    <div>
+      <p class="greeting">Hey there!</p>
+      <h1>I'm Julian <span class="wave">👋</span></h1>
+      <ul class="iconrow">
+        <li><a href="https://github.com/julianschelb" target="_blank" rel="noopener" ><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a></li>
+        <li><a href="https://orcid.org/0009-0002-8034-7364" target="_blank" rel="noopener" ><svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM7.37 18.2H5.62V6.98h1.75V18.2zM6.5 5.9a1.03 1.03 0 1 1 0-2.06 1.03 1.03 0 0 1 0 2.06zm5.02 12.3H9.77V6.98h3.9c3.71 0 5.34 2.65 5.34 5.62 0 3.22-2.52 5.6-5.4 5.6h-2.09zm1.9-9.63h-1.9v8.05h1.83c2.42 0 3.7-1.7 3.7-4.02 0-2.13-1.13-4.03-3.63-4.03z"/></svg>ORCID</a></li>
+        <li><a href="https://huggingface.co/julian-schelb" target="_blank" rel="noopener" ><span aria-hidden="true" style="font-size:15px">🤗</span>HuggingFace</a></li>
+        <li><a href="https://www.linkedin.com/in/julian-schelb/" target="_blank" rel="noopener" ><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a></li>
+      </ul>
+    </div>
+  </header>
 
     <main>
-        <section class="about-card">
-            <h2>About Me</h2>
-            <p>
-                I'm an NLP Researcher at the University of Konstanz and a Software Engineer, specializing in large language models and all things data science!
-            </p>
-            <div class="pills-container">
-            <span class="pill">M.Sc. Computer Science</span>
-            <span class="pill">B.Sc. Business Informatics</span>
-            <span class="pill">Gen AI Solution Engineer</span>
-            <span class="pill">NLP Researcher</span>
-            <span class="pill">Data Scientist</span>
-            <span class="pill">Research Assistant</span>
-            <span class="pill">Junior Data Scientist</span>
-            <span class="pill">Application Developer</span>
-        </div>
-    </section>
+  <p class="lede">I'm an <span class="pop" tabindex="0">NLP Researcher at the University of Konstanz<span class="popcard" role="tooltip"><strong>Research</strong>I started with a B.Sc. in Business Informatics, added an M.Sc. in Computer Science, and worked as a teaching and research assistant along the way. These days I'm doing my PhD in NLP: teaching machines to notice how Latin texts quote and echo each other, and finding fair ways to evaluate language models.</span></span> with a history in <span class="pop" tabindex="0">Software Engineering<span class="popcard" role="tooltip"><strong>Engineering</strong>Before research I built software as an application developer, mostly with SQL, Python, R and TypeScript. Old habits stuck: whatever I work on tends to end up as a proper package or pipeline.</span></span> and <span class="pop" tabindex="0">Data Science Consulting<span class="popcard" role="tooltip"><strong>Consulting</strong>As a data scientist and AI engineer in consulting roles, I help teams turn language models and messy data into things that actually ship.</span></span>, and an interest in large language models and all things machine learning!</p>
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-cards">
-            <div class="card">
-                <div class="card-title">Loci-Similes: Intertextuality in Latin Literature</div>
-                <p>A Python package for detecting intertextual links in Latin literature using pre-trained language models. The pipeline generates and reranks candidates to map sentences between source and query documents, with a focus on evaluating semantic and stylistic reuse.</p>
-                <div class="button-container">
-                    <a href="https://github.com/julianschelb/locisimiles" target="_blank" class="visit-link">GitHub Repository</a>
-                    <a href="https://pypi.org/project/locisimiles/" target="_blank" class="visit-link">PyPI Package</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Topic Classification of German Web Data</div>
-                <p>We explore the application of large language models for topic classification within a low-resource German web environment, leveraging a dataset comprising millions of scraped webpages aimed at evaluating policy impacts.</p>
-                <div class="button-container">
-                    <a href="https://github.com/julianschelb/Topic-Classification" target="_blank" class="visit-link">Visit Project</a>
-                    <a href="https://aclanthology.org/2024.acl-srw.22.pdf" target="_blank" class="visit-link">Read Paper</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Tag-Pag: Systematic Web Page Annotations</div>
-                <p>A dedicated tool for systematic web page annotations, designed to streamline the process of annotating and analyzing web content for research and data science applications.</p>
-                <div class="button-container">
-                    <a href="https://github.com/Pantonius/TagPag" target="_blank" class="visit-link">Visit Project</a>
-                    <a href="https://arxiv.org/abs/2502.16150" target="_blank" class="visit-link">Read Paper</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">R.U.Psycho: Robust Unified Psychometric Testing of Language Models</div>
-                <p>This project introduces a framework for robust, unified psychometric testing of language models, enabling comprehensive evaluation of their cognitive and linguistic capabilities.</p>
-                <div class="button-container">
-                    <a href="https://github.com/julianschelb/rupsycho" target="_blank" class="visit-link">Visit Project</a>
-                    <a href="https://arxiv.org/abs/2503.10229" target="_blank" class="visit-link">Read Paper</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Narrative Tracking in Newspapers</div>
-                <p>We explore narratives and their patterns of influence by compiling a large dataset of news articles. Using large language models to annotate narratives as triples of hero, villain, and victim mentions, we track shared narratives and identify patterns of influence across partisanships.</p>
-                <div class="button-container">
-                    <a href="https://github.com/julianschelb/llm-based-role-labeling" target="_blank" class="visit-link">Visit Project</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">ECCE - Entity-Centric Corpus Exploration</div>
-                <p>ECCE helps you to analyze your documents and corpora by detecting named entities to extracting an entity network.</p>
-                <div class="button-container">
-                    <a href="https://dimtools.uni-konstanz.de/ecce/" target="_blank" class="visit-link">Visit Project</a>
-                    <a href="https://doi.org/10.1145/3487553.3524237" target="_blank" class="visit-link">Read Paper</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">RAG-based Knowledge Extraction</div>
-                <p>RAG pipeline for querying technical docs, with query expansion, HyDE, and a Gradio chat interface.</p>
-                <div class="button-container">
-                    <a href="https://github.com/julianschelb/RAG-based-Knowledge-Extraction-Challenge" target="_blank" class="visit-link">Visit Project</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Finetune RoBERTa for NER</div>
-                <p>Fine-tuned RoBERTa for multilingual NER to make cross-lingual entity extraction easier.</p>
-                <div class="button-container">
-                    <a href="https://github.com/julianschelb/roberta-ner-multilingual" target="_blank" class="visit-link">Visit Project</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Yet Another Solarized Theme</div>
-                <p>A solarized VSCode theme with just the right contrast to keep your eyes comfy!</p>
-                <div class="button-container">
-                    <a href="https://github.com/julianschelb/vscode-theme-solarized" target="_blank" class="visit-link">Visit Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="projects">
+    <div class="sec-head">
+      <h2 class="seclbl">Projects</h2>
+      <div class="car-nav">
+        <button class="car-btn" id="carPrev" aria-label="Scroll projects left"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="car-btn" id="carNext" aria-label="Scroll projects right"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
 
-    <footer>
-        <p>🌟 For more projects and collaborations, check out my <a href="https://github.com/julianschelb" target="_blank">GitHub</a> or let’s connect on <a href="https://www.linkedin.com/in/julian-schelb/" target="_blank">LinkedIn</a>!</p>
-    </footer>
+    <div class="cards" id="projectCarousel" tabindex="0">
+
+    <article class="item reveal">
+      <h3 class="it-title">Loci Similes: intertextuality in Latin literature</h3>
+      <p class="kick">Python package</p>
+      <p class="it-desc">A benchmark and a Python package for detecting intertextual links in Latin literature. The pipeline generates candidates from a source corpus and reranks them with pretrained language models, covering the full range from verbatim quotation to allusion disguised by morphological variation.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://github.com/julianschelb/locisimiles" target="_blank" rel="noopener">GitHub</a><a href="https://pypi.org/project/locisimiles/" target="_blank" rel="noopener">PyPI</a><a href="#pub-locisimiles">Paper</a></div>
+    </article>
+
+    <article class="item reveal">
+      <h3 class="it-title">ECCE</h3>
+      <p class="kick">Web application</p>
+      <p class="it-desc">Entity-centric corpus exploration. Detects named entities across a document collection and turns their co-occurrence into a navigable implicit network.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://dimtools.uni-konstanz.de/ecce/" target="_blank" rel="noopener">Live demo</a><a href="#pub-ecce">Paper</a></div>
+    </article>
+
+    <article class="item reveal">
+      <h3 class="it-title">R.U.Psycho</h3>
+      <p class="kick">Evaluation Framework</p>
+      <p class="it-desc">Robust, unified psychometric testing of language models. Runs questionnaires designed for humans against generative models in a reproducible way, so trait claims can be checked rather than taken on faith.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://github.com/julianschelb/rupsycho" target="_blank" rel="noopener">GitHub</a><a href="#pub-rupsycho">Paper</a></div>
+    </article>
+
+    <article class="item reveal">
+      <h3 class="it-title">Topic classification of German web data</h3>
+      <p class="kick">Research code</p>
+      <p class="it-desc">In-context learning against fine-tuning for topic detection in a low-resource German web setting, on millions of scraped pages collected to measure policy impact.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://github.com/julianschelb/Topic-Classification" target="_blank" rel="noopener">GitHub</a><a href="#pub-topic">Paper</a></div>
+    </article>
+
+    <article class="item reveal">
+      <h3 class="it-title">Yet Another Solarized Theme</h3>
+      <p class="kick">VSCode Theme</p>
+      <p class="it-desc">A Solarized theme for VS Code, tuned for contrast that stays comfortable over a long day.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://github.com/julianschelb/vscode-theme-solarized" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+
+    <article class="item reveal">
+      <h3 class="it-title">Multilingual RoBERTa for NER</h3>
+      <p class="kick">Model Training Code</p>
+      <p class="it-desc">A fine-tuned RoBERTa checkpoint for multilingual named entity recognition, published on the Hub so cross-lingual entity extraction does not have to start from scratch.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://github.com/julianschelb/roberta-ner-multilingual" target="_blank" rel="noopener">GitHub</a><a href="https://huggingface.co/julian-schelb" target="_blank" rel="noopener">Hugging Face</a></div>
+    </article>
+
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2 class="seclbl">Publications</h2>
+
+    <article class="item reveal" id="pub-locisimiles">
+      <h3 class="it-title">Loci Similes: A Benchmark for Extracting Intertextualities in Latin Literature</h3>
+      <p class="pub-venue">Findings of the Association for Computational Linguistics: EMNLP</p>
+      <p class="authors"><span class="me">Julian Schelb</span>, Michael Wittweiler, Marie Revellio, Barbara Feichtinger, Andreas Spitz</p>
+      <p class="summary">A benchmark of 1,490 scholarly attested intertextual links between Latin authors, released with a reference implementation. Distinguishes verbatim quotation from allusion by a deterministic lemma-based rule and compares lexical retrieval, dense retrieval and cross-encoder reranking on the same candidate pool.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://arxiv.org/abs/2601.07533" target="_blank" rel="noopener">Preprint</a><a href="https://github.com/julianschelb/locisimiles" target="_blank" rel="noopener">Code</a><a href="https://pypi.org/project/locisimiles/" target="_blank" rel="noopener">Package</a></div>
+    </article>
+
+    <article class="item reveal" id="pub-rupsycho">
+      <h3 class="it-title">R.U.Psycho? A Framework for Robust Unified Psychometric Testing of Language Models</h3>
+      <p class="pub-venue">Language Resources and Evaluation Conference (LREC)</p>
+      <p class="authors"><span class="me">Julian Schelb</span>, Orr Borin, David Garcia, Andreas Spitz</p>
+      <p class="summary">Questionnaires written for human respondents are increasingly run against generative models to claim traits or benchmark alignment. This framework makes those runs reproducible and comparable, so a reported trait can be re-measured rather than taken on trust.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://aclanthology.org/2026.lrec-1.661/" target="_blank" rel="noopener">Paper</a><a href="https://github.com/julianschelb/rupsycho" target="_blank" rel="noopener">Code</a></div>
+    </article>
+
+    <article class="item reveal" id="pub-topic">
+      <h3 class="it-title">Assessing In-context Learning and Fine-tuning for Topic Classification of German Web Data</h3>
+      <p class="pub-venue">ACL Student Research Workshop</p>
+      <p class="authors"><span class="me">Julian Schelb</span>, Roberto Ulloa, Andreas Spitz</p>
+      <p class="summary">Political and social scientists study information consumption by classifying millions of visited webpages, which rules out manual labelling. The paper compares fine-tuned encoders against in-context learning in a low-resource German setting, and reports where the cheaper option is good enough.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://aclanthology.org/2024.acl-srw.22" target="_blank" rel="noopener">Paper</a><a href="https://github.com/julianschelb/Topic-Classification" target="_blank" rel="noopener">Code</a></div>
+    </article>
+
+    <article class="item reveal" id="pub-ecce">
+      <h3 class="it-title">ECCE: Entity-centric Corpus Exploration Using Contextual Implicit Networks</h3>
+      <p class="pub-venue">Companion Proceedings of the Web Conference</p>
+      <p class="authors"><span class="me">Julian Schelb</span>, Maud Ehrmann, Matteo Romanello, Andreas Spitz</p>
+      <p class="summary">A web application for reading a document collection through the people and places in it. Named entities are detected across the corpus and their contextual co-occurrence becomes an implicit network that can be browsed instead of the raw documents.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://doi.org/10.1145/3487553.3524237" target="_blank" rel="noopener">Paper</a><a href="https://dimtools.uni-konstanz.de/ecce/" target="_blank" rel="noopener">Demo</a></div>
+    </article>
+
+    <article class="item reveal" id="pub-tagpag">
+      <h3 class="it-title">Tag-Pag: A Dedicated Tool for Systematic Web Page Annotations</h3>
+      <p class="pub-venue">Preprint</p>
+      <p class="authors">Anton Pogrebnjak, <span class="me">Julian Schelb</span>, Andreas Spitz, Celina Kacperski, Roberto Ulloa</p>
+      <p class="summary">Existing annotation tools assume you are labelling spans of text. Researchers who scrape the web usually need the opposite: a verdict on whether an entire page belongs to a category. Tag-Pag systematises that page-level decision.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://arxiv.org/abs/2502.16150" target="_blank" rel="noopener">Preprint</a><a href="https://github.com/Pantonius/TagPag" target="_blank" rel="noopener">Code</a></div>
+    </article>
+
+    <article class="item reveal">
+      <h3 class="it-title">An Evaluation of Classifiers for Mapping Generative LLM Responses to Answer Options of Multiple-choice Questionnaires</h3>
+      <p class="pub-venue">EACL Student Research Workshop</p>
+      <p class="authors">Alisea Stroligo, Anna Shamray, <span class="me">Julian Schelb</span>, Andreas Spitz</p>
+      <p class="summary">A generative model answering a multiple-choice item rarely returns a clean option label. The paper compares classifiers that map free-form responses back onto the intended answer options, a step that quietly decides the outcome of many questionnaire-based evaluations.</p>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://aclanthology.org/2026.eacl-srw.64/" target="_blank" rel="noopener">Paper</a></div>
+    </article>
+  </section>
+  </main>
+
+  <footer class="site">
+    <span>Julian Schelb</span>
+    <span>A single HTML file, no trackers.</span>
+  </footer>
+
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var stored = null;
+  try { stored = localStorage.getItem("theme"); } catch (e) {}
+  var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (stored === "dark" || (!stored && prefersDark)) root.setAttribute("data-theme", "dark");
+  document.getElementById("themeToggle").addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") === "dark";
+    if (dark) { root.removeAttribute("data-theme"); } else { root.setAttribute("data-theme", "dark"); }
+    try { localStorage.setItem("theme", dark ? "light" : "dark"); } catch (e) {}
+  });
+  var car = document.getElementById("projectCarousel");
+  if (car) {
+    var step = function () { return (car.querySelector(".item").offsetWidth + 13) * 1; };
+    document.getElementById("carPrev").addEventListener("click", function () { car.scrollBy({ left: -step(), behavior: "smooth" }); });
+    document.getElementById("carNext").addEventListener("click", function () { car.scrollBy({ left: step(), behavior: "smooth" }); });
+  }
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+  }
+})();
+</script>
 </body>
 </html>
