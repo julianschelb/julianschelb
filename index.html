@@ -275,6 +275,40 @@
   .cards .it-links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 12px; font-size: .83rem; align-items: baseline; }
   .cards .it-links a:hover { color: var(--pop); }
 
+  .demo-cta {
+    align-self: flex-start; display: inline-flex; align-items: center; gap: 7px;
+    padding: 8px 16px; margin: 2px 0 12px; border-radius: 999px;
+    background: var(--accent); color: #fff;
+    font-size: .82rem; font-weight: 800; letter-spacing: -.005em;
+    box-shadow: 0 4px 14px rgba(91,76,176,.35);
+    transition: transform .25s cubic-bezier(.2,.9,.3,1.25), box-shadow .25s ease, background-color .2s ease;
+  }
+  a.demo-cta::after { content: none; }
+  .demo-cta svg {
+    width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2.6;
+    stroke-linecap: round; stroke-linejoin: round; transition: transform .25s cubic-bezier(.2,.9,.3,1.25);
+  }
+  .demo-cta:hover, .demo-cta:focus-visible {
+    background: var(--pop); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(192,95,33,.4);
+  }
+  .demo-cta:hover svg, .demo-cta:focus-visible svg { transform: translate(2px,-2px); }
+  [data-theme="dark"] .demo-cta { box-shadow: 0 4px 14px rgba(179,167,245,.3); }
+  [data-theme="dark"] .demo-cta:hover, [data-theme="dark"] .demo-cta:focus-visible { box-shadow: 0 8px 22px rgba(240,165,99,.35); }
+  @media (prefers-reduced-motion: no-preference) {
+    .demo-cta { animation: demoPulse 2.8s ease-in-out infinite; }
+    .demo-cta:hover, .demo-cta:focus-visible { animation: none; }
+    @keyframes demoPulse {
+      0%, 100% { box-shadow: 0 4px 14px rgba(91,76,176,.35); }
+      50% { box-shadow: 0 4px 20px rgba(91,76,176,.62); }
+    }
+    [data-theme="dark"] .demo-cta { animation: demoPulseDark 2.8s ease-in-out infinite; }
+    [data-theme="dark"] .demo-cta:hover, [data-theme="dark"] .demo-cta:focus-visible { animation: none; }
+    @keyframes demoPulseDark {
+      0%, 100% { box-shadow: 0 4px 14px rgba(179,167,245,.3); }
+      50% { box-shadow: 0 4px 20px rgba(179,167,245,.55); }
+    }
+  }
+
   /* ---- publications, archivist style ---- */
   #publications .item {
     padding: 14px 14px; margin: 0 -14px; border-top: 1px solid var(--line-soft);
@@ -358,7 +392,8 @@
       <h3 class="it-title">ECCE</h3>
       <p class="kick">Web application</p>
       <p class="it-desc">Entity-centric corpus exploration. Detects named entities across a document collection and turns their co-occurrence into a navigable implicit network.</p>
-      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://github.com/julianschelb/ecce" target="_blank" rel="noopener">GitHub</a><a href="https://pypi.org/project/implicit-word-network/" target="_blank" rel="noopener">PyPI</a><a href="https://www.corpus-exploration.net/" target="_blank" rel="noopener">Live demo</a><a href="#pub-ecce">Paper</a></div>
+      <a class="demo-cta" href="https://www.corpus-exploration.net/" target="_blank" rel="noopener">Open demo <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      <div class="it-links"><span class="lnk-lbl">Links:</span><a href="https://github.com/julianschelb/ecce" target="_blank" rel="noopener">GitHub</a><a href="https://pypi.org/project/implicit-word-network/" target="_blank" rel="noopener">PyPI</a><a href="#pub-ecce">Paper</a></div>
     </article>
 
     <article class="item reveal">
