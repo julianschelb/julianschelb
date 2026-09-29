@@ -278,10 +278,10 @@
   .demo-cta {
     align-self: stretch; display: flex; align-items: center; justify-content: center; gap: 7px;
     padding: 9px 16px; margin: auto 0 10px; border-radius: 999px;
-    background: #5b4cb0; color: #fff;
+    background: var(--accent-soft); color: var(--accent);
     font-size: .82rem; font-weight: 800; letter-spacing: -.005em;
-    box-shadow: 0 4px 14px rgba(91,76,176,.35);
-    transition: transform .25s cubic-bezier(.2,.9,.3,1.25), box-shadow .25s ease, background-color .2s ease;
+    box-shadow: none;
+    transition: transform .25s cubic-bezier(.2,.9,.3,1.25), box-shadow .25s ease, background-color .2s ease, color .2s ease;
   }
   .demo-cta + .it-links { margin-top: 0; }
   a.demo-cta::after { content: none; }
@@ -290,25 +290,10 @@
     stroke-linecap: round; stroke-linejoin: round; transition: transform .25s cubic-bezier(.2,.9,.3,1.25);
   }
   .demo-cta:hover, .demo-cta:focus-visible {
-    background: #c05f21; transform: translateY(-2px); box-shadow: 0 8px 22px rgba(192,95,33,.4);
+    background: #c05f21; color: #fff; transform: translateY(-2px); box-shadow: 0 8px 22px rgba(192,95,33,.4);
   }
   .demo-cta:hover svg, .demo-cta:focus-visible svg { transform: translate(2px,-2px); }
-  [data-theme="dark"] .demo-cta { background: #473a8f; box-shadow: 0 4px 14px rgba(0,0,0,.35); }
   [data-theme="dark"] .demo-cta:hover, [data-theme="dark"] .demo-cta:focus-visible { background: #a1541f; box-shadow: 0 8px 22px rgba(0,0,0,.4); }
-  @media (prefers-reduced-motion: no-preference) {
-    .demo-cta { animation: demoPulse 2.8s ease-in-out infinite; }
-    .demo-cta:hover, .demo-cta:focus-visible { animation: none; }
-    @keyframes demoPulse {
-      0%, 100% { box-shadow: 0 4px 14px rgba(91,76,176,.35); }
-      50% { box-shadow: 0 4px 20px rgba(91,76,176,.62); }
-    }
-    [data-theme="dark"] .demo-cta { animation: demoPulseDark 2.8s ease-in-out infinite; }
-    [data-theme="dark"] .demo-cta:hover, [data-theme="dark"] .demo-cta:focus-visible { animation: none; }
-    @keyframes demoPulseDark {
-      0%, 100% { box-shadow: 0 4px 14px rgba(0,0,0,.35); }
-      50% { box-shadow: 0 4px 20px rgba(71,58,143,.55); }
-    }
-  }
 
   /* ---- publications, archivist style ---- */
   #publications .item {
