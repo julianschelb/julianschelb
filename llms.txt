@@ -12,6 +12,7 @@
 
 ## Key publications
 
+- Learning Word-Level Explanations of Text Reuse in Latin Literature with Little Annotation (preprint): https://github.com/julianschelb/retexo
 - Loci Similes: A Benchmark for Extracting Intertextualities in Latin Literature (Findings of EMNLP): https://arxiv.org/abs/2601.07533
 - R.U.Psycho? Robust Unified Psychometric Testing of Language Models (LREC): https://aclanthology.org/2026.lrec-1.661/
 - Assessing In-context Learning and Fine-tuning for Topic Classification of German Web Data (ACL SRW): https://aclanthology.org/2024.acl-srw.22
